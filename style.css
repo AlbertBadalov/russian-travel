@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(../russian-travel/vendor/static/Inter-Thin.ttf);
+}
+
+.page {
+    background: #2A2C2F;
+    margin: auto;
+    position: relative;
+    width: 1280px;
+    height: 6875px;
+    z-index: -1;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    left: 48px;
+    top: 28px;
+    bottom: 6795px;
+    margin: auto;
+    width: 1184px;
+    height: 52px;
+}
+
+.header__lang-link {
+    width: 30px;
+    height: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #fff;
+}
+
+.header__logo {
+    width: 176px;
+    height: 52px;
+}
+
+.lead__title {
+    margin: auto;
+    width: 720px;
+    height: 200px;
+    color: #fff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.lead__subtitle {
+    position: relative;
+    margin: 32px auto 0;
+    width: 640px;
+    height: 72px;
+    color: #fff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.lead {
+    position: absolute;
+    top: 136px;
+    left: 148px;
+    right: 148px;
+    bottom: 5734px;
+    margin: auto;
+    width: 984px;
+    height: 1005px;
+}
+
+.lead__image {
+    position: relative;
+    width: 984px;
+    height: 615px;
+    margin: 64px auto 0;
+}
+
+.lead__caption {
+    min-width: 158px;
+    height: 14px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.intro {
+    position: absolute;
+    width: 690px;
+    height: 429px;
+    left: 148px;
+    top: 1233px;
+    color: #FFFFFF;
+}
+
+.intro__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 58px;
+}
+
+.intro__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+}
+
+.intro__list {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.photo-grid {
+    position: absolute;
+    width: 1184px;
+    height: 671px;
+    left: 48px;
+    top: 1754px;
+    color: #FFFFFF;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.places {
+    position: relative;
+    width: 984px;
+    height: 3392px;
+    left: 148px;
+    top: 2517px;
+    color: #FFFFFF;
+
+}
+
+.place {
+    width: 984px;
+    min-height: 584px;
+    max-height: 660px;
+    margin-bottom: 80px;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.place:last-child {
+    margin: 0;
+}
+
+
+
+.places__title {
+    max-width: 460px;
+    min-height: 76px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+    margin: 0 0 48px;
+}
+
+.places__image {
+    width: 460px;
+    height: 460px;
+}
+
+.places__website {
+    width: 456px;
+    height: 46px;
+    margin-bottom: 48px;
+}
+
+.places__url-heading {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 2px;
+    color: #AAAAAA;
+    margin: 0;
+}
+
+.places__link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+.places__paragraph {
+    width: 484px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 163%;
+    color: #FFFFFF;
+    margin: 0 0 26px 0;
+}
+
+.places__paragraph:last-child {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cover {
+    position: absolute;
+    width: 1184px;
+    height: 740px;
+    left: 48px;
+    top: 6001px;
+    color: #FFFFFF;
+}
+
+.footer {
+    position: absolute;
+    width: 1184px;
+    height: 18px;
+    left: 48px;
+    top: 6833px;
+    color: #FFFFFF;
+}
