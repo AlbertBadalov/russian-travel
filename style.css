@@ -7,24 +7,22 @@
     background: #2A2C2F;
     margin: auto;
     width: 1280px;
-    height: 6875px;
 }
 
 .header {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     margin: auto;
     padding-top: 28px;
     width: 1184px;
     height: 52px;
-}
-
-a {
-    color: #fff;
-    text-decoration: none;
+    gap: 18px;
 }
 
 .header__lang-link {
+    color: #fff;
+    text-decoration: none;
     width: 30px;
     height: 28px;
     font-family: 'Inter';
@@ -33,12 +31,13 @@ a {
     font-size: 24px;
     line-height: 28px;
     text-align: right;
-    text-decoration-line: underline;
-    color: #fff;
     list-style: none;
+    margin: 18px 0 6px 0;
 }
 
 .header__logo {
+    position: absolute;
+    left: 0;
     width: 176px;
     height: 52px;
 }
@@ -129,6 +128,14 @@ a {
     font-size: 12px;
     line-height: 18px;
     list-style: none;
+}
+
+.intro__list_number {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
 }
 
 .photo-grid {
@@ -228,56 +235,45 @@ a {
 }
 
 .cover {
-    position: relative;
     margin: auto;
     width: 1184px;
     height: 740px;
-    color: #FFFFFF;
 }
 
 .cover__title {
-    position: relative;
-    padding-top: 219px;
-    margin: 0 auto 0;
-    width: 560px;
-    height: 152px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 900;
     font-size: 72px;
     line-height: 76px;
     text-align: center;
-    opacity: 1;
+    color: #fff;
+    text-decoration: none;
+    transition-duration: .4s;
 }
 
 .cover__subtitle {
-    position: relative;
-    margin: 0 auto 0;
-    width: 360px;
-    height: 66px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
+    color: #fff;
+}
+
+.cover__overlay {
+    opacity: 0.8;
 }
 
 .cover__background {
-    position: absolute;
     width: 1184px;
     height: 740px;
     margin: auto;
 }
 
-.cover__overlay {
-    opacity: 0.8;
-    transition-duration: .4s;
-}
-
-.cover__overlay:hover {
+.cover__title:hover > .cover__subtitle  {
     opacity: 0.3;
-    transition-timing-function: ease-in-out;
 }
 
 .footer {
@@ -312,6 +308,7 @@ a {
     color: #FFFFFF;
     transition-duration: .4s;
     margin: 0;
+    text-decoration: none;
 }
 
 .footer__link:hover {
