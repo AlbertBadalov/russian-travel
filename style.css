@@ -281,7 +281,40 @@ a {
 }
 
 .footer {
+    position: relative;
     width: 1184px;
     height: 18px;
     color: #FFFFFF;
+    margin: 92px auto 24px;
+    display: flex;
+    gap: 18px;
+}
+
+.footer__copyright {
+    position: absolute;
+    right: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.footer__link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    transition-duration: .4s;
+    margin: 0;
+}
+
+.footer__link:hover {
+    opacity: 80%;
+    transition-timing-function: ease-in-out;
 }
