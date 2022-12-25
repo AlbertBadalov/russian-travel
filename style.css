@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'Inter';
-    src: url(../russian-travel/vendor/static/Inter-Thin.ttf);
+    src: url(../russian-travel/vendor/Inter-Black.woff2);
+    src: url(../russian-travel/vendor/Inter-Bold.woff2);
+    src: url(../russian-travel/vendor/Inter-Regular.woff2);
 }
 
 .page {
@@ -43,7 +45,7 @@
 }
 
 .lead {
-    margin: 56px auto 0;
+    margin: 56px auto 92px;
     width: 984px;
     height: 1005px;
 }
@@ -97,7 +99,7 @@
 }
 
 .intro {
-    margin: 92px auto 0 148px ;
+    margin: 92px auto 92px;
     width: 690px;
     height: 429px;
     color: #FFFFFF;
@@ -130,7 +132,7 @@
     list-style: none;
 }
 
-.intro__list_number {
+.intro__list_value {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -139,7 +141,7 @@
 }
 
 .photo-grid {
-    margin: 92px auto 0;
+    margin: 92px auto 92px;
     width: 1184px;
     height: 671px;
     color: #FFFFFF;
@@ -150,24 +152,22 @@
 }
 
 .places {
-    margin: 92px auto;
+    display: grid;
+    margin: 92px auto 92px;
     width: 984px;
-    height: 3392px;
     color: #FFFFFF;
+    gap: 80px;
 }
 
 .place {
-    margin-bottom: 80px;
+    gap: 80px;
     width: 984px;
     min-height: 584px;
     max-height: 660px;
-    display: flex;
-    gap: 40px;
-    justify-content: space-between;
-}
-
-.place:last-child {
-    margin: 0;
+    display: grid;
+    gap: 48px 40px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
 }
 
 .places__title {
@@ -178,7 +178,7 @@
     font-weight: 900;
     font-size: 72px;
     line-height: 76px;
-    margin: 0 0 48px;
+    margin: 0;
 }
 
 .places__image {
@@ -187,12 +187,17 @@
 }
 
 .places__website {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 12px;
     width: 456px;
-    height: 46px;
-    margin-bottom: 48px;
+    min-height: 76px;
+    margin: 0;
 }
 
 .places__url-heading {
+    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -235,45 +240,65 @@
 }
 
 .cover {
-    margin: auto;
+    margin: 92px auto 92px;
+    color: white;
+    background-size: cover;
+    position: relative;
     width: 1184px;
     height: 740px;
+    background-image: url(./images/dmitrii-vaccinium-22833-unsplash.jpg);
+}
+
+.cover__overlay {
+    position: relative;
+    z-index: 0;
+    color: inherit;
+    text-decoration: none;
+    width: 1184px;
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cover__overlay::before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    width: 1184px;
+    height: 740px;
+    background: rgba(42, 44, 47, 0.3);
+    transition-duration: .4s;
+
+}
+
+.cover__overlay:hover::before {
+    background: rgba(42, 44, 47, 0.8) ;
+    transition-timing-function: ease-in-out;
 }
 
 .cover__title {
+    margin: 245px auto 32px;
+    width: 560px;
+    height: 152px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 900;
     font-size: 72px;
     line-height: 76px;
     text-align: center;
-    color: #fff;
-    text-decoration: none;
-    transition-duration: .4s;
 }
 
 .cover__subtitle {
+    margin: 0 auto 0;
+    width: 360px;
+    height: 66px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
-    color: #fff;
-}
-
-.cover__overlay {
-    opacity: 0.8;
-}
-
-.cover__background {
-    width: 1184px;
-    height: 740px;
-    margin: auto;
-}
-
-.cover__title:hover > .cover__subtitle  {
-    opacity: 0.3;
 }
 
 .footer {
@@ -281,9 +306,10 @@
     width: 1184px;
     height: 18px;
     color: #FFFFFF;
-    margin: 92px auto 24px;
     display: flex;
     gap: 18px;
+    margin: 0 auto 0;
+    padding-bottom: 24px;
 }
 
 .footer__copyright {
