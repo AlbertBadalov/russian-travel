@@ -234,10 +234,13 @@
     margin: 0;
 }
 
-.cover {
+.cover  {
     margin: auto;
     width: 1184px;
     height: 740px;
+}
+.cover:hover .cover__background {
+    opacity: .3;
 }
 
 .cover__title {
@@ -262,18 +265,11 @@
     color: #fff;
 }
 
-.cover__overlay {
-    opacity: 0.8;
-}
-
 .cover__background {
     width: 1184px;
     height: 740px;
     margin: auto;
-}
-
-.cover__title:hover > .cover__subtitle  {
-    opacity: 0.3;
+    opacity: .8;
 }
 
 .footer {
