@@ -1,0 +1,61 @@
+.cover__overlay {
+    position: relative;
+    z-index: 0;
+    color: inherit;
+    text-decoration: none;
+    width: 1184px;
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cover__overlay::before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    width: 1184px;
+    height: 740px;
+    background: rgba(42, 44, 47, 0.3);
+    transition-duration: .4s;
+}
+
+.cover__overlay:hover::before {
+    background: rgba(42, 44, 47, 0.8);
+    transition-timing-function: ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+    .cover__overlay {
+        max-width: 1024px;
+        max-height: 640px;
+    }
+
+    .cover__overlay::before {
+        max-width: 1024px;
+        max-height: 640px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cover__overlay {
+        max-width: 768px;
+        max-height: 480px;
+    }
+
+    .cover__overlay::before {
+        max-width: 768px;
+        max-height: 480px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cover__overlay {
+        max-width: 320px;
+        max-height: 200px;
+    }
+
+    .cover__overlay::before {
+        max-width: 320px;
+        max-height: 200px;
+    }
+}
