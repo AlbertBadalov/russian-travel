@@ -41,7 +41,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url(../russian-travel/vendor/Inter-Black.woff2);
-    src: url(../russian-travel/vendor/Inter-Bold.woff2);
-    src: url(../russian-travel/vendor/Inter-Regular.woff2);
+    src: url(../vendor/Inter-Black.woff2);
+    src: url(../vendor/Inter-Bold.woff2);
+    src: url(../vendor/Inter-Regular.woff2);
 }
