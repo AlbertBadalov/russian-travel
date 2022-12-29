@@ -1,7 +1,6 @@
 .intro {
     margin: 92px 0 92px 148px;
     width: 690px;
-    height: 429px;
     color: #FFFFFF;
 }
 
@@ -21,6 +20,5 @@
     .intro {
         margin: auto;
         width: 288px;
-        height: 754px;
     }
 }
