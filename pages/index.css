@@ -39,9 +39,4 @@
 @import url(../blocks/place/__website/place__website.css);
 @import url(../blocks/places/places.css);
 
-@font-face {
-    font-family: 'Inter';
-    src: url(../vendor/Inter-Black.woff2);
-    src: url(../vendor/Inter-Bold.woff2);
-    src: url(../vendor/Inter-Regular.woff2);
-}
+@import url(../vendor/fonts/fonts.css);

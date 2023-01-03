@@ -2,23 +2,26 @@
     background: #2A2C2F;
     margin: auto;
     max-width: 1280px;
-    overflow-x: hidden;
+    transition-duration: .4s;
 }
 
 @media screen and (max-width: 1024px) {
     .page {
+        transition-timing-function: ease-in-out;
         width: 1024px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .page {
-        width: 768px;
+       transition-timing-function: ease-in-out;
+       width: 768px;
     }
 }
 
 @media screen and (max-width: 320px) {
     .page {
         width: 320px;
+        transition-timing-function: ease-in-out;
     }
 }
