@@ -8,20 +8,18 @@
 @media screen and (max-width: 1024px) {
     .page {
         transition-timing-function: ease-in-out;
-        width: 1024px;
+        max-width: 1024px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .page {
-       transition-timing-function: ease-in-out;
-       width: 768px;
+       max-width: 768px;
     }
 }
 
 @media screen and (max-width: 320px) {
     .page {
-        width: 320px;
-        transition-timing-function: ease-in-out;
+        max-width: 320px;
     }
 }

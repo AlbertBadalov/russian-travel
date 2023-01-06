@@ -1,6 +1,6 @@
 .places__title {
-    max-width: 460px;
-    font-family: 'Inter-Black';
+    font-family: 'Inter';
+    font-weight: 900;
     font-style: normal;
     font-size: 72px;
     line-height: 76px;
@@ -9,25 +9,25 @@
 
 @media screen and (max-width: 1024px) {
     .places__title {
-        max-width: 440px;
+        font-size: calc(42px + (30 + 30 * 0.7) * ((100vw - 768px) / 768));
+        line-height: calc(46px + (30 + 30 * 0.7) * ((100vw - 768px) / 768));
     }
 }
 
 @media screen and (max-width: 768px) {
     .places__title {
-        max-width: 340px;
-        font-family: 'Inter-Black';
-        font-style: normal;
-        font-size: 42px;
-        line-height: 46px;
+        font-size: calc(32px + (10 + 10 * 0.7) * ((100vw - 320px) / 320));
+        line-height: calc(35px + (11 + 11 * 0.7) * ((100vw - 320px) / 320));
     }
 }
 
 @media screen and (max-width: 320px) {
     .places__title {
-        max-width: 288px;
         font-size: 32px;
         line-height: 35px;
         margin-left: 16px;
     }
 }
+
+
+

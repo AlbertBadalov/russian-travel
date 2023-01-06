@@ -4,24 +4,23 @@
     margin: auto;
     padding-top: 28px;
     max-width: 92.5%;
-    gap: 18px;
 }
 
 @media screen and (max-width: 1024px) {
     .header {
-        max-width: 928px;
+        max-width: 90.625%;
     }
 }
 
 @media screen and (max-width: 768px) {
     .header {
-        max-width: 720px;
+        max-width: 93.75%;
     }
 }
 
 @media screen and (max-width: 320px) {
     .header {
-        max-width: 288px;
+        max-width: 90%;
         padding-top: 16px;
     }
 }

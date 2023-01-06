@@ -3,10 +3,9 @@
     z-index: 0;
     color: inherit;
     text-decoration: none;
-    max-width: 1184px;
-    max-height: 740px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 245px auto 245px;
 }
 
 .cover__overlay::before {
@@ -27,35 +26,23 @@
 @media screen and (max-width: 1024px) {
     .cover__overlay {
         max-width: 1024px;
-        max-height: 640px;
-    }
-
-    .cover__overlay::before {
-        width: 100%;
-        height: 100%;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: 192px auto 195px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .cover__overlay {
         max-width: 768px;
-        max-height: 480px;
-    }
-
-    .cover__overlay::before {
-        width: 100%;
-        height: 100%;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: 115px auto 115px;
     }
 }
 
 @media screen and (max-width: 320px) {
     .cover__overlay {
         max-width: 320px;
-        max-height: 200px;
-    }
-
-    .cover__overlay::before {
-        width: 100%;
-        height: 100%;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: 33px auto 33px;
     }
 }
