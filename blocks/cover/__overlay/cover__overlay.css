@@ -3,9 +3,6 @@
     z-index: 0;
     color: inherit;
     text-decoration: none;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: 245px auto 245px;
 }
 
 .cover__overlay::before {
@@ -26,23 +23,17 @@
 @media screen and (max-width: 1024px) {
     .cover__overlay {
         max-width: 1024px;
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: 192px auto 195px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .cover__overlay {
         max-width: 768px;
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: 115px auto 115px;
     }
 }
 
 @media screen and (max-width: 320px) {
     .cover__overlay {
         max-width: 320px;
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: 33px auto 33px;
     }
 }

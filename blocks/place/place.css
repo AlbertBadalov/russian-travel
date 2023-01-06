@@ -2,31 +2,33 @@
     max-width: 76.875%;
     display: grid;
     gap: 48px 40px;
-    grid-template-columns: 46.74% 49.186%;
+    grid-template-columns: 46.74% auto;
     grid-template-rows: repeat(2, auto);
     margin: 0 auto 0;
+    transition-duration: .4s;
 }
 
 @media screen and (max-width: 1024px) {
     .place {
         max-width: 90.625%;
         gap: 48px 32px;
-        grid-template-columns: 47.413% 49.137%;
+        grid-template-columns: 47.413% auto;
+        transition-timing-function: ease-in-out;
     }
 }
 
 @media screen and (max-width: 768px) {
     .place {
-        max-width: 93.75%;
+        max-width: 720px;
         gap: 48px 28px;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 47.2% auto;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 470px) {
     .place {
-        max-width: 100%;
-        grid-template-columns: repeat(1, 320px);
+        max-width: 320px;
+        grid-template-columns: 100%;
         gap: 0;
     }
 }

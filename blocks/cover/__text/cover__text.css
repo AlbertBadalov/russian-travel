@@ -1,0 +1,23 @@
+.cover__text {
+    margin: 0 auto 0;
+    padding: 20.7% 1%;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .cover__text {
+        padding: 19.05% 1%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cover__text {
+        padding: 15% 1%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cover__text {
+        padding: 10.31% 1%;
+    }
+}
