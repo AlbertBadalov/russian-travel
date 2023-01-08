@@ -1,25 +1,6 @@
 .page {
     background: #2A2C2F;
     margin: auto;
-    max-width: 1280px;
+    width: 100%;
     transition-duration: .4s;
-}
-
-@media screen and (max-width: 1024px) {
-    .page {
-        transition-timing-function: ease-in-out;
-        max-width: 1024px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .page {
-       max-width: 768px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .page {
-        max-width: 320px;
-    }
 }

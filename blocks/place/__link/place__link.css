@@ -1,5 +1,5 @@
-.places__link {
-    font-family: 'Inter';
+.place__link {
+    font-family: 'Inter', Arial, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
@@ -9,13 +9,13 @@
     transition-duration: .4s;
 }
 
-.places__link:hover {
+.place__link:hover {
     opacity: 80%;
     transition-timing-function: ease-in-out;
 }
 
 @media screen and (max-width: 470px) {
-    .places__link {
+    .place__link {
         margin-top: 12px;
     }
 }

@@ -12,13 +12,6 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    .places {
-        margin: 88px auto 90px;
-        gap: 73px;
-    }
-}
-
 @media screen and (max-width: 320px) {
     .places {
         gap: 50px;

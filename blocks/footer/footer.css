@@ -1,5 +1,5 @@
 .footer {
-    width: 92.5%;
+    max-width: 1184px;
     color: #FFFFFF;
     display: flex;
     margin: 92px auto 0;
@@ -9,13 +9,13 @@
 
 @media screen and (max-width: 1024px) {
     .footer {
-        width: 90.625%;
+        max-width: 90.625%;
     }
 }
 
 @media screen and (max-width: 768px) {
     .footer {
-        width: 93.75%;
+        max-width: 93.75%;
         margin: 88px auto 0;
     }
 }

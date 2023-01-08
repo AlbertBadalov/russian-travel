@@ -1,5 +1,5 @@
 .place {
-    max-width: 76.875%;
+    max-width: 984px;
     display: grid;
     gap: 48px 40px;
     grid-template-columns: 46.74% auto;
